@@ -296,6 +296,34 @@ header {
     background-clip: text;
 }
 
+/* Glitch effect styles */
+.glitch-text {
+    font-family: 'JetBrains Mono', 'Space Mono', monospace;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+
+/* Special styling for hero glitch text */
+.hero-title .glitch-text {
+    display: inline-block;
+    white-space: normal;
+    line-height: 1.2;
+}
+
+/* For section titles that might be long */
+.section-title.glitch-text {
+    white-space: normal;
+    text-align: center;
+}
+
+h2.glitch-text {
+    white-space: normal;
+}
+
 .hero-subtitle {
     display: block;
     font-size: clamp(20px, 3vw, 28px);

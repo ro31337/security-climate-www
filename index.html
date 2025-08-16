@@ -83,7 +83,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="gradient-text">Where Security Meets Payments</span>
+                    <span class="gradient-text glitch-text" data-value="Where Security Meets Payments">Where Security Meets Payments</span>
                     <span class="hero-subtitle">Building & Breaking Systems That Move Billions</span>
                 </h1>
                 <p class="hero-description">
@@ -112,7 +112,7 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">What We Do</h2>
+                <h2 class="section-title glitch-text" data-value="What We Do">What We Do</h2>
                 <p class="section-subtitle">Where security and software meets payments</p>
             </div>
             
@@ -169,7 +169,7 @@
     <section id="trainings" class="trainings">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Professional Security Training</h2>
+                <h2 class="section-title glitch-text" data-value="Professional Security Training">Professional Security Training</h2>
                 <p class="section-subtitle">Past training programs we've delivered</p>
             </div>
 
@@ -248,7 +248,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-header">
-                    <h2>About Security Climate</h2>
+                    <h2 class="glitch-text" data-value="About Security Climate">About Security Climate</h2>
                     <p class="about-subtitle">Expert Security Consulting Firm</p>
                 </div>
                 
@@ -303,7 +303,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
-                <h2>Get in Touch</h2>
+                <h2 class="glitch-text" data-value="Get in Touch">Get in Touch</h2>
                 <p class="contact-subtitle">Let's discuss how we can help secure your systems.</p>
                 
                 <div class="contact-box">
@@ -387,6 +387,64 @@
     <script>
         // Set current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Glitch effect
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        
+        function applyGlitchEffect(element) {
+            let interval = null;
+            let iteration = 0;
+            const originalText = element.dataset.value;
+            
+            clearInterval(interval);
+            
+            interval = setInterval(() => {
+                element.innerText = element.innerText
+                    .split("")
+                    .map((letter, index) => {
+                        if(index < iteration) {
+                            return originalText[index];
+                        }
+                        // Keep spaces and special characters intact
+                        if(originalText[index] === " " || originalText[index] === "-" || originalText[index] === "'") {
+                            return originalText[index];
+                        }
+                        return letters[Math.floor(Math.random() * 26)]
+                    })
+                    .join("");
+                
+                if(iteration >= originalText.length){ 
+                    clearInterval(interval);
+                }
+                
+                iteration += 1 / 3;
+            }, 30);
+        }
+        
+        // Intersection Observer for scroll-triggered glitch effect
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+        
+        const glitchObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !entry.target.classList.contains('glitched')) {
+                    entry.target.classList.add('glitched');
+                    applyGlitchEffect(entry.target);
+                    // Stop observing after the effect has been triggered once
+                    glitchObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all glitch-text elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const glitchElements = document.querySelectorAll('.glitch-text');
+            glitchElements.forEach(element => {
+                glitchObserver.observe(element);
+            });
+        });
         
         function copyEmail() {
             const email = document.getElementById('email').textContent;
