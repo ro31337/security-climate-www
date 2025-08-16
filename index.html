@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Climate - ATM Security Training & Consulting Services</title>
+    <meta name="description" content="Expert ATM security training, red team assessments, and payment system security consulting. Learn from real-world attack vectors and defense strategies.">
+    <meta name="keywords" content="ATM security, payment security, red team training, security consulting, penetration testing, Track 2 exploitation, ATM hacking defense">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Security Climate - ATM Security Training & Consulting">
+    <meta property="og:description" content="Expert ATM security training and consulting services. Learn from real-world attack vectors and defense strategies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://securityclimate.com">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <span>Security Climate</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#trainings">Trainings</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- HOPE Conference Banner -->
+    <section class="conference-banner">
+        <div class="container">
+            <div class="banner-content">
+                <div class="banner-label">
+                    <span class="pulse-dot"></span>
+                    FEATURED TALK
+                </div>
+                <div class="banner-grid">
+                    <div class="banner-left">
+                        <img src="hope_banner.png" alt="HOPE 16 Conference" class="hope-logo">
+                        <div class="conference-info">
+                            <h3>HOPE 16: Hackers On Planet Earth</h3>
+                            <p class="conference-date">August 15-17, 2025 • Queens, NYC</p>
+                        </div>
+                    </div>
+                    <div class="banner-center">
+                        <h2 class="talk-title">ATM Hacking: Past and Present</h2>
+                        <p class="talk-subtitle">"The trick might look impossible, but the method is usually simple."</p>
+                        <p class="talk-description">
+                            Join Roman Pushkin for a deep dive into the evolution of ATM attacks, from classic physical exploits to modern software vulnerabilities. 
+                            Live demonstration featuring a custom-built "flusher device" showcasing real-world cash system vulnerabilities.
+                        </p>
+                        <div class="speaker-info">
+                            <div class="speaker-avatar">RP</div>
+                            <div>
+                                <p class="speaker-name">Roman Pushkin</p>
+                                <p class="speaker-title">Security Researcher • 20+ Years in InfoSec</p>
+                            </div>
+                        </div>
+                        <a href="https://schedule.hope.net/hope16/talks" target="_blank" class="conference-link">View Full Conference Schedule →</a>
+                    </div>
+                    <div class="banner-right">
+                        <img src="hope_talk.jpg" alt="ATM Hacking Talk" class="talk-preview">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Where Security Meets Payments</span>
+                    <span class="hero-subtitle">Building & Breaking Systems That Move Billions</span>
+                </h1>
+                <p class="hero-description">
+                    From high-level Ruby applications to low-level ESP32 firmware, we secure payment infrastructure 
+                    at every layer. Our experience comes from working on platforms that process $1-3 billion daily.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">$3B</span>
+                        <span class="stat-label">Daily Transaction Volume</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Years in Security</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">70+</span>
+                        <span class="stat-label">Engineers Trained</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">Where security and software meets payments</p>
+            </div>
+            
+            <div class="services-columns">
+                <div class="service-column">
+                    <h3>Security Consulting</h3>
+                    <p>
+                        We bring hands-on experience from working on payment platforms that move $1 to $3 billion USD daily. 
+                        Our deep understanding of financial infrastructure security comes from building and protecting 
+                        high-volume transaction systems at scale.
+                    </p>
+                    <ul>
+                        <li>ATM and payment terminal security audits</li>
+                        <li>Vulnerability assessments and penetration testing</li>
+                        <li>Security architecture review and threat modeling</li>
+                        <li>Compliance and risk management consulting</li>
+                        <li>Incident response and forensics</li>
+                    </ul>
+                </div>
+                
+                <div class="service-column">
+                    <h3>Software Development</h3>
+                    <p>
+                        We build secure payment solutions and custom security tools using a full spectrum of technologies - 
+                        from high-level Ruby applications to low-level C programming on ESP32 chips with ESP-IDF framework.
+                    </p>
+                    <ul>
+                        <li>Payment processing software and APIs</li>
+                        <li>Security testing tools and automation frameworks</li>
+                        <li>Hardware security modules and embedded systems</li>
+                        <li>Custom firmware for ESP32/ESP8266 devices</li>
+                        <li>Integration with existing payment infrastructure</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <p class="tech-stack-label">Technologies We Master:</p>
+                <div class="tech-badges">
+                    <span class="tech-badge">Ruby</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">C/C++</span>
+                    <span class="tech-badge">ESP-IDF</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Go</span>
+                    <span class="tech-badge">Hardware Security</span>
+                    <span class="tech-badge">Embedded Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainings Section -->
+    <section id="trainings" class="trainings">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Security Training</h2>
+                <p class="section-subtitle">Past training programs we've delivered</p>
+            </div>
+
+            <div class="past-trainings">
+                <div class="training-intro">
+                    <p>We've successfully delivered specialized security training to teams worldwide. Here are some of our flagship programs:</p>
+                </div>
+                
+                <div class="past-trainings-grid">
+                    <div class="past-training-card">
+                        <h3>ATM Security Bootcamp</h3>
+                        <p class="training-desc">3-day intensive hands-on training covering ATM attack vectors, defense strategies, and tool development with live demonstrations using real equipment.</p>
+                        <div class="training-meta">
+                            <span class="attendees">12 participants</span>
+                            <span class="duration">3 days</span>
+                        </div>
+                    </div>
+                    
+                    <div class="past-training-card">
+                        <h3>Executive ATM Risk Overview</h3>
+                        <p class="training-desc">Strategic one-day overview of ATM security threats and mitigation strategies designed for executives and decision makers.</p>
+                        <div class="training-meta">
+                            <span class="attendees">8 participants</span>
+                            <span class="duration">1 day</span>
+                        </div>
+                    </div>
+                    
+                    <div class="past-training-card">
+                        <h3>Advanced Red Team ATM</h3>
+                        <p class="training-desc">5-day deep-dive training for experienced red team specialists featuring exclusive underground techniques and advanced exploitation methods.</p>
+                        <div class="training-meta">
+                            <span class="attendees">6 participants</span>
+                            <span class="duration">5 days</span>
+                        </div>
+                    </div>
+                    
+                    <div class="past-training-card">
+                        <h3>Payment Terminal Pentesting</h3>
+                        <p class="training-desc">Comprehensive training on POS terminal security testing using black box and grey box methodologies with protocol exploitation techniques.</p>
+                        <div class="training-meta">
+                            <span class="attendees">10 participants</span>
+                            <span class="duration">2 days</span>
+                        </div>
+                    </div>
+                    
+                    <div class="past-training-card">
+                        <h3>Track 2 Exploitation & Defense</h3>
+                        <p class="training-desc">Specialized workshop on magnetic stripe vulnerabilities, bypass techniques, and defense strategies based on real-world attack scenarios.</p>
+                        <div class="training-meta">
+                            <span class="attendees">15 participants</span>
+                            <span class="duration">2 days</span>
+                        </div>
+                    </div>
+                    
+                    <div class="past-training-card">
+                        <h3>Hardware Security & ESP32 Development</h3>
+                        <p class="training-desc">Hands-on workshop on building custom security testing devices using ESP32 microcontrollers, firmware development, and hardware exploitation techniques.</p>
+                        <div class="training-meta">
+                            <span class="attendees">9 participants</span>
+                            <span class="duration">3 days</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="training-cta-section">
+                    <h3>Interested in Training for Your Team?</h3>
+                    <p>We offer customized security training programs tailored to your organization's specific needs. All trainings include hands-on practice with real equipment and can be delivered on-site or remotely.</p>
+                    <a href="#contact" class="training-cta-button">Discuss Your Training Needs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-header">
+                    <h2>About Security Climate</h2>
+                    <p class="about-subtitle">Expert Security Consulting Firm</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Security Climate is a specialized security consulting firm founded by Roman Pushkin, a veteran security researcher 
+                            with over 20 years of experience in information security and financial systems protection.
+                        </p>
+                        <p>
+                            Our firm brings together deep technical expertise from both offensive and defensive security perspectives, 
+                            offering unique insights into real-world attack vectors and practical defense strategies. We specialize in 
+                            ATM security, payment systems, and financial infrastructure protection.
+                        </p>
+                        <p>
+                            With a foundation built on hands-on experience and continuous research, Security Climate delivers 
+                            cutting-edge security solutions that protect financial institutions from evolving threats.
+                        </p>
+                    </div>
+                    <div class="about-credentials">
+                        <div class="credential-item">
+                            <div>
+                                <strong>Conference Presentations</strong>
+                                <p>HOPE, DEF CON Villages, Security BSides</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div>
+                                <strong>Published Research</strong>
+                                <p>2600: The Hacker Quarterly, Security Whitepapers</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div>
+                                <strong>Specializations</strong>
+                                <p>Payment Systems, ATM Security, Hardware Exploitation</p>
+                            </div>
+                        </div>
+                        <div class="credential-item">
+                            <div>
+                                <strong>Industry Experience</strong>
+                                <p>20+ years in Security Research and Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Get in Touch</h2>
+                <p class="contact-subtitle">Let's discuss how we can help secure your systems.</p>
+                
+                <div class="contact-box">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <div class="contact-label">Email Us</div>
+                            <div class="contact-value" id="email">sales@securityclimate.com</div>
+                            <div class="contact-buttons">
+                                <button class="copy-button" onclick="copyEmail()">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <span id="copy-text">Copy Email</span>
+                                </button>
+                                <a href="mailto:sales@securityclimate.com" class="send-button">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                    Send Email
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-label">Call Us</div>
+                            <div class="contact-value">415-413-6910</div>
+                            <div class="contact-buttons">
+                                <a href="tel:4154136910" class="call-button">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                    Call Now
+                                </a>
+                                <button class="copy-button" onclick="copyPhone()">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <span id="copy-phone-text">Copy Number</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="response-time">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Typical response time: Within 24 hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Security Climate</h3>
+                    <p>Expert security consulting and training for financial institutions worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="#services">Security Consulting</a>
+                    <a href="#trainings">Professional Training</a>
+                    <a href="#contact">Custom Solutions</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-<span id="current-year">2025</span> Security Climate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        function copyEmail() {
+            const email = document.getElementById('email').textContent;
+            navigator.clipboard.writeText(email).then(function() {
+                const textSpan = document.getElementById('copy-text');
+                textSpan.textContent = 'Copied!';
+                setTimeout(function() {
+                    textSpan.textContent = 'Copy Email';
+                }, 2000);
+            });
+        }
+
+        function copyPhone() {
+            const phone = '4154136910';
+            navigator.clipboard.writeText(phone).then(function() {
+                const textSpan = document.getElementById('copy-phone-text');
+                textSpan.textContent = 'Copied!';
+                setTimeout(function() {
+                    textSpan.textContent = 'Copy Number';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
